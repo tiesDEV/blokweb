@@ -44,9 +44,9 @@ Het HTML'en gaat tot nu toe best goed. Natuurlijk is het even weer inkomen maar 
 
 **Screenshot(s):**
 
-![screenshot(s) van waar ik nu ben](images/so far 1.png)
+![screenshot(s) van waar ik nu ben](images/so-far-1.png)
 
-![screenshot(s) van waar ik nu ben](images/so far 2.png)
+![screenshot(s) van waar ik nu ben](images/so-far-2.png)
 
 ### Agenda voor meeting
 
