@@ -1,0 +1,14 @@
+nav {
+  background-color: grey;
+
+}
+
+nav ul {
+list-style-type: none;
+
+}
+
+nav img:first-of-type {
+  height: 1em;
+
+}
