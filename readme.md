@@ -40,19 +40,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Het HTML'en gaat tot nu toe best goed. Natuurlijk is het even weer inkomen maar het gaat beter dan ik had verwacht. Je komt er ook gelijk achter hoeveel tijd je er in de toekomst mee moet gaan besteden.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![screenshot(s) van waar ik nu ben](images/so far 1.png)
+
+![screenshot(s) van waar ik nu ben](images/so far 2.png)
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+-Margin gaat niet weg naar list-style-type: none;
+-Moet een lijst met 1. 2. 3. ook een <OL> krijgen als de volgorde niet uitmaakt?
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+We gingen elkaars werk bekijken en helpen als er iets niet lukte. We hielpen elkaar met dingen die niet werkte of lukten. Dit was vooral CSS gerelateerd.
 
 
 
