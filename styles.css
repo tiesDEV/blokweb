@@ -1,14 +1,354 @@
-nav {
-  background-color: grey;
+/* @font-face {
+  font-family: 'San Francisco';
+  src: url(fonts/SF-Pro-Text-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: 'San Francisco';
+  src: url(fonts/SF-Pro-Text-Medium.otf);
+  font-style: normal;
+  font-weight: 400;
+} */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Bron: https://stackoverflow.com/questions/32660748/how-to-use-apples-new-san-francisco-font-on-a-webpage */
+  margin: 0;
+}
+
+/* NAVIGATIEBAR: */
+header nav {
+  background-color: #2F3232;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
 }
 
 nav ul {
-list-style-type: none;
-
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav img:first-of-type {
+header img:first-of-type {
+  /* height: 10px;
+  width: 30px; */
   height: 1em;
+  width: 2em;
+}
+
+/* CORONA INFORMATIE: */
+
+      /* Blauw */
+
+header section:first-of-type {
+  background-color: #0071E2;
+  text-align: center;
+}
+
+header section a {
+  /* margin: 2em; */
+  line-height: 1.5em;
+  text-decoration: none;
+  /* Bron: https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link */
+}
+
+header section a:first-of-type {
+  color: white;
+  padding: 0 1em 0 1em;
+  /* margin: 2em; */
+  line-height: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  /* Bron: https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link */
+}
+
+      /* Wit */
+
+header section:nth-of-type(2) p a {
+  background-color: white;
+  color: #0065CB;
+  text-align: center;
+}
+
+header section p {
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+
+/* MAIN */
+
+/* SECTION 1: IPHONE SE */
+main section {
+  position: relative;
+  background-color: #121312;
+}
+
+main img {
+  height: 100%;
+  width: 100%;
+}
+
+main section h2, h3, p {
+  /* position: absolute; */
+  color: white;
+  text-align: center;
+  margin: 0;
 
 }
+
+main section h2 {
+  padding-top: 2em;
+
+}
+
+main section h3, p {
+  padding: .5em 2em 0 2em;
+
+}
+
+main section p, p a {
+  color: #86858B;
+  text-decoration: none;
+}
+
+main section p a:first-of-type {
+  color: #86858B;
+  text-decoration: none;
+}
+
+main section ul {
+  text-align: center;
+  padding: 0;
+  margin: .5em 0 0 0;
+}
+
+main section ul li {
+  display: inline-table;
+  padding:
+}
+
+main section ul li a {
+  color: #2797FE;
+  text-decoration: none;
+}
+
+/* main section a:nth-of-type(1) {
+  color: #2797FE;
+  text-align: center;
+}
+
+main section a:nth-of-type(2) {
+  color: #2797FE;
+  text-align: center;
+} */
+
+/* SECTION 2: IPHONE 11 (UITZONDERINGEN) */
+
+main section:nth-of-type(2) {
+  background-color: #F9FAF9;
+}
+
+main section:nth-of-type(2) h2, section:nth-of-type(2) h3 {
+  color: black;
+}
+
+main img:nth-of-type(2) {
+position: relative;
+right: 22em;
+width: 275%;
+height: 275%;
+overflow: hidden;
+
+}
+
+
+/* SECTION 3: IPAD PRO (UITZONDERINGEN) */
+
+main section:nth-of-type(3) {
+  background-color: #F9FAF9;
+}
+
+main section:nth-of-type(3) h2, section:nth-of-type(3) h3 {
+  color: black;
+}
+
+main img:nth-of-type(3) {
+position: relative;
+right: 21em;
+width: 275%;
+height: 275%;
+overflow: hidden;
+
+}
+
+/* SECTION 4: COLLEGE (UITZONDERINGEN) */
+
+main section:nth-of-type(4) {
+  background-color: #F0EFF2;
+}
+
+main section:nth-of-type(4) h2, section:nth-of-type(4) h3 {
+  color: black;
+}
+
+main section:nth-of-type(4) h2 {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+/* SECTION 5: AIRPODS (UITZONDERINGEN) */
+
+main section:nth-of-type(5) {
+  background-color: #FBFAFD;
+}
+
+main section:nth-of-type(5) h2, section:nth-of-type(5) h3 {
+  color: black;
+}
+
+main section:nth-of-type(5) h3 {
+  margin-left: .9em;
+  margin-right: .9em;
+}
+
+/* SECTION 6: APPLE CARD */
+
+main section:nth-of-type(6) {
+  background-color: #FBFAFD;
+}
+
+main section:nth-of-type(6) h2, section:nth-of-type(6) h3, section:nth-of-type(6) h3 a sup {
+  color: black;
+}
+
+main section:nth-of-type(6) h3 a {
+  text-decoration: none;
+}
+
+main section:nth-of-type(6) h2 {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+/* SECTION 7: LITTLE VOICE */
+
+main section:nth-of-type(7) h4, section:nth-of-type(7) a {
+position: absolute;
+z-index: 1;
+}
+
+main section:nth-of-type(7) h4 {
+  color: white;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+main section:nth-of-type(7) a {
+  bottom: 8%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+main section:nth-of-type(7) img:first-of-type {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: auto;
+  z-index: 1;
+
+}
+
+main section:nth-of-type(7) img:nth-of-type(2) {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: auto;
+  z-index: 1;
+}
+
+main section:nth-of-type(7) img:nth-of-type(3) {
+  position: relative;
+}
+
+/* SECTION 8: APPLE WATCH */
+
+main section:nth-of-type(8) {
+  background-color: #FBFAFD;
+}
+
+main section:nth-of-type(8) img {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+
+}
+
+main section:nth-of-type(8) h3 {
+  color: #D11F2A;
+padding-top: 6em;
+font-size: .8em;
+}
+
+main section:nth-of-type(8) h4 {
+  color: black;
+}
+
+
+
+main section:nth-of-type(8) h4 {
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+/* SECTION 9: APPLE'S APPROACH */
+
+main section:nth-of-type(9) {
+  background-color: #FBFAFD;
+}
+
+main section:nth-of-type(9) h2 {
+  color: black;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* FOOTER */
+
+/* SECTION 1: ALGEMENE INFORMATIE */
+
+footer {
+  background-color: #FBFAFD;
+}
+
+footer section:first-of-type ul {
+  font-size: .7em;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer section:first-of-type ul li {
+  color: #86858B;
+  padding: 1em 2em 1em 2em;
+}
+
+/* VRAGEN:  1. MAIN SECTION A, hoe selecteer ik beiden nth-of-types?
+            2. OVERFLOW: HIDDEN werkt niet bij de ingezoomde plaatjes
