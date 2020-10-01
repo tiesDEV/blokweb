@@ -32,9 +32,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+Het gaat tot nu toe best goed. van Pagina 1 heb ik bijna de CSS klaar, daar wil ik nog een paar vragen over stellen omdat ik ik op sommige punten vastloop. Dan kan ik in de CSS de puntjes op de i zetten en het daarna responsive maken. Pagina 2 heb ik niet verder uitgewerkt dan het vorige voortgangsgesprek. Ik wil namelijk eerst de 1e pagina goed afhebben voordat ik aan de tweede begin.
 
+**Screenshot(s):**
+
+![screenshot(s) van waar ik nu ben](images/wk5-so-far-1.png)
 
 ## Voortgang 1 (week 3)
 
