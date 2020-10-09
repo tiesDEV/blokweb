@@ -350,5 +350,37 @@ footer section:first-of-type ul li {
   padding: 1em 2em 1em 2em;
 }
 
+footer nav details {
+  position: relative;
+}
+
+footer nav details summary::before {
+  content: '';
+  height: .05em;
+  width: 90%;
+  background-color: #86858B;
+  position: absolute;
+  bottom: 0;
+  left: 1;
+}
+
+/* bron: https://stackoverflow.com/questions/6195329/how-can-you-hide-the-arrow-that-is-displayed-by-default-on-the-html5-details-e */
+footer details summary::-webkit-details-marker {
+  display:none;
+}
+
+footer section nav details summary {
+  font-size: .7em;
+  margin-left: 2em;
+  padding: 1em 0 1em 0;
+}
+
+footer section nav a {
+  color: #86858B;
+  text-decoration: none;
+  margin-left: 3em;
+  font-size: .7em;
+}
+
 /* VRAGEN:  1. MAIN SECTION A, hoe selecteer ik beiden nth-of-types?
             2. OVERFLOW: HIDDEN werkt niet bij de ingezoomde plaatjes
