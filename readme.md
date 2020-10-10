@@ -26,9 +26,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Sinds afgelopen voortgangsgesprek heb ik niet zo veel tijd meer kunnen besteden aan mijn website. Gelukkig heb ik nog wel wat vragen kunnen stellen tijdens de voortgang zodat ik weer verder kan.
 
+**Screenshot(s):**
 
+![screenshot(s) van waar ik nu ben](images/wk6-so-far-1.png)
 
 ## Voortgang 2 (week 5)
 
