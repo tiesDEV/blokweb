@@ -8,19 +8,29 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://stackoverflow.com/questions/32660748/how-to-use-apples-new-san-francisco-font-on-a-webpage
+2. https://web.dev/backdrop-filter/
+3. https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link
+4. https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link
+5. https://stackoverflow.com/questions/6195329/how-can-you-hide-the-arrow-that-is-displayed-by-default-on-the-html5-details-e
+6. https://markheath.net/post/customize-radio-button-css
+7. https://www.w3schools.com/cssref/css_selectors.asp
+8. http://nthmaster.com/
+9. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
+10. https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg
+11. https://www.flaticon.com/authors/pixel-perfect
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Na de vorige voortgang ben ik gelijk aan de slag gegaan en heb ik heel veel tijd bestijd aan deze site. Ik heb hier ook meer tijd aan besteed dan voor andere vakken. Naast dat ik vaak tegenslagen had omdat iets niet werkend kreeg, heb ik veel veel geleerd. De site van Apple bevat een hoop content en gebruikt technieken die ik nog niet eerder had gebruikt. Ik wist bijvoorbeeld nog niet van het bestaan van details en summary, maar ook wist ik helemaal niet hoe ik een foto gallerij (caroussel) moest maken. Achteraf heb ik dus een hoop geleerd en hopelijk is dit ook terug te zien in het eindproduct.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+![screenshot 1 van mijn einresultaat](images/eindresultaat-home.png)
+
+![screenshot 2 van mijn einresultaat](images/eindresultaat-buy.png)
 
 
 
@@ -69,7 +79,7 @@ We gingen elkaars werk bekijken en helpen als er iets niet lukte. We hielpen elk
 
 **Je startniveau:** Blauw
 
-**Je focus:** Responsive
+**Je focus:** Surface
 
 **Je opdracht:** https://www.apple.com/
 

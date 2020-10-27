@@ -9,17 +9,19 @@
   <title>Apple</title>
 </head>
 
-<script type="text/javascript" src="script.js">
-
-</script>
 <body>
 
   <header>
-    <nav>
+
+    <!-- NAVIGATIE BAR -->
+
+    <nav class="navbarFixed">
       <ul>
         <li>
-          <a href="#"><img src="images/menu.png" alt="Hamburger menu"></a>
-          <!-- bron: https://www.flaticon.com/authors/pixel-perfect -->
+          <div tabindex="0" class="hamburger-menu-animatie">
+            <span id="streep1"></span>
+            <span id="streep2"></span>
+          </div>
         </li>
         <li>
           <a href="#"><img src="images/logo.svg" alt="Apple logo"></a>
@@ -32,17 +34,38 @@
       </ul>
     </nav>
 
-    <section>
+    <div class="hamburger">
+      <nav class="hamburger-menu">
+
+        <input type="text" placeholder="Search apple.com">
+
+        <ul>
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">Tv</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- INFO OVER CORONA -->
+
+    <section class="pagina1header">
       <a href="#">Evaluate COVID‑19 symptoms and understand next steps ></a>
     </section>
 
     <section>
-      <p><a href="#">Shop online</a>and get free, no‑contact delivery, Specialist help, and more.</p>
+      <p><a href="#">Shop online</a> and get free, no‑contact delivery, Specialist help, and more.</p>
     </section>
 
   </header>
 
-  <main>
+  <!-- IPHONE SE -->
+
+  <main class="pagina1main">
     <section>
       <h2>iPhone SE</h2>
       <h3>Lots to love. Less to spend. Starting at $399.</h3>
@@ -51,21 +74,23 @@
         <li><a href="#">Learn more ></a></li>
         <li><a href="productpagina.html">Buy ></a></li>
       </ul>
-      </section>
-    <img src="images/mobile section 1.jpg" alt="Black iPhone SE's">
+    </section>
+    <img src="images/mobilesection1.jpg" alt="Black iPhone SE's">
 
+<!-- IPHONE 11 -->
 
     <section>
       <h2>iPhone 11</h2>
       <h3>Just the right amount of everything.</h3>
       <p>From $19.95/mo. or $479 with trade-in.<a href="#"><sup>1</sup></a></p>
-        <ul>
-          <li><a href="#">Learn more ></a></li>
-          <li><a href="#">Buy ></a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Learn more ></a></li>
+        <li><a href="#">Buy ></a></li>
+      </ul>
     </section>
-  <img src="images/mobile section 2.jpg" alt="iPhone 11's">
+    <img src="images/mobilesection2.jpg" alt="iPhone 11's">
 
+<!-- IPAD PRO -->
 
     <section>
       <h2>iPad Pro</h2>
@@ -75,7 +100,9 @@
         <li><a href="#">Buy ></a></li>
       </ul>
     </section>
-      <img src="images/mobile section 3.jpg" alt="iPad Pro">
+    <img src="images/mobilesection3.jpg" alt="iPad Pro">
+
+<!-- COLLEGE -->
 
     <section>
       <h2>Buy a Mac or iPad for college. Get AirPods.</h2>
@@ -83,7 +110,9 @@
         <li><a href="#">Shop ></a></li>
       </ul>
     </section>
-      <img src="images/mobile section 4.jpg" alt="MacBook Air, iPad Pro and AirPods">
+    <img src="images/mobilesection4.jpg" alt="MacBook Air, iPad Pro and AirPods">
+
+<!-- AIRPODS -->
 
     <section>
       <h2>Make them yours.</h2>
@@ -93,7 +122,9 @@
         <li><a href="#">Buy ></a></li>
       </ul>
     </section>
-      <img src="images/mobile section 5.jpg" alt="AirPods">
+    <img src="images/mobilesection5.jpg" alt="AirPods">
+
+<!-- APPLE CARD -->
 
     <section>
       <h2>Apple Card Monthly Installments.</h2>
@@ -102,7 +133,9 @@
         <li><a href="#">Learn more ></a></li>
       </ul>
     </section>
-      <img src="images/mobile section 6.jpg" alt="Apple products">
+    <img src="images/mobilesection6.jpg" alt="Apple products">
+
+<!-- APPLE TV+ -->
 
     <section>
       <img src="images/appletvlogo.png" alt="Apple TV Logo">
@@ -111,11 +144,13 @@
       <ul>
         <li><a href="#">Watch the complete season &#9654; </a></li>
       </ul>
-      <img src="images/mobile section 7.jpg" alt="Cover Little Voice">
+      <img src="images/mobilesection7.jpg" alt="Cover Little Voice">
     </section>
 
+<!-- APPLE WATCH LOGO -->
+
     <section>
-      <img src="images/applewatchlogo.svg" alt="Apple TV Logo">
+      <img src="images/applewatchlogo.svg" alt="Apple Watch logo">
       <h3>Series 5</h3>
       <h4>With the Always-On Retina display. You've never seen a watch like this.</h4>
       <ul>
@@ -123,7 +158,9 @@
         <li><a href="#">Buy ></a></li>
       </ul>
     </section>
-      <img src="images/mobile section 8.jpg" alt="Apple Watches">
+    <img src="images/mobilesection8.jpg" alt="Apple Watches">
+
+<!-- REOPENING OUR STORES -->
 
     <section>
       <h2>Apple's approach to reopening our stores</h2>
@@ -131,29 +168,31 @@
         <li><a href="#">Read the letter ></a></li>
       </ul>
     </section>
-      <img src="images/section apple logo.jpg" alt="Apple logo">
+    <img src="images/sectionapplelogo.jpg" alt="Apple logo">
 
   </main>
+
+<!-- FOOTER -->
 
   <footer>
     <section>
       <ul>
         <li>
           1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro promotional pricing is after trade‑in of iPhone 8 Plus
-            and iPhone X in good condition. iPhone SE promotional pricing is after trade-in of iPhone 8 in good condition.
-            Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18.
-            Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store
-            trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information).
-            Sales tax may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may
-            apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens
-            One or Apple Card Monthly Installments and iPhone activation with AT&amp;T;, Sprint, T-Mobile, or Verizon. Taxes and
-            shipping not included. Additional Apple Card Monthly Installments terms are in the Customer Agreement. Additional iPhone
-            Payments terms are here.
+          and iPhone X in good condition. iPhone SE promotional pricing is after trade-in of iPhone 8 in good condition.
+          Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18.
+          Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store
+          trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information).
+          Sales tax may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may
+          apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens
+          One or Apple Card Monthly Installments and iPhone activation with AT&amp;T;, Sprint, T-Mobile, or Verizon. Taxes and
+          shipping not included. Additional Apple Card Monthly Installments terms are in the Customer Agreement. Additional iPhone
+          Payments terms are here.
         </li>
         <li>
           2. Apple Card Monthly Installments is available for certain Apple products and is subject to credit approval and credit limit. See https://support.apple.com/kb/HT211204 for more information about eligible products. iPhone activation
-            required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Sprint, Verizon, or T-Mobile. Variable APRs for Apple Card other than Apple Card Monthly Installments range from 10.99% to 21.99% based on
-            creditworthiness. Rates as of April 1, 2020. Taxes and shipping are not included in Apple Card Monthly Installments and are subject to your standard purchase APR. See the Apple Card customer agreement for more information.
+          required on iPhone purchases made at an Apple Store with one of these national carriers: AT&T, Sprint, Verizon, or T-Mobile. Variable APRs for Apple Card other than Apple Card Monthly Installments range from 10.99% to 21.99% based on
+          creditworthiness. Rates as of April 1, 2020. Taxes and shipping are not included in Apple Card Monthly Installments and are subject to your standard purchase APR. See the Apple Card customer agreement for more information.
         </li>
         <li>
           Magic Keyboard sold separately.
@@ -164,202 +203,202 @@
       </ul>
     </section>
 
-<!-- BRON: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary -->
+    <!-- BRON: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary -->
 
     <section>
       <nav>
-          <details>
-            <summary>Shop and Learn</summary>
-            <ul>
-              <li>
-                <a href="#">Mac</a>
-              </li>
-              <li>
-                <a href="#">iPad</a>
-              </li>
-              <li>
-                <a href="#">iPhone</a>
-              </li>
-              <li>
-                <a href="#">Watch</a>
-              </li>
-              <li>
-                <a href="#">TV</a>
-              </li>
-              <li>
-                <a href="#">Music</a>
-              </li>
-              <li>
-                <a href="#">AirPods</a>
-              </li>
-              <li>
-                <a href="#">HomePod</a>
-              </li>
-              <li>
-                <a href="#">iPod touch</a>
-              </li>
-              <li>
-                <a href="#">Accessories</a>
-              </li>
-              <li>
-                <a href="#">Gift Cards</a>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>Services</summary>
-            <ul>
-              <li>
-                <a href="#">Apple Music</a>
-              </li>
-              <li>
-                <a href="#">Apple News+</a>
-              </li>
-              <li>
-                <a href="#">Apple TV+</a>
-              </li>
-              <li>
-                <a href="#">Apple Arcade</a>
-              </li>
-              <li>
-                <a href="#">Apple Books</a>
-              </li>
-              <li>
-                <a href="#">Apple Card</a>
-              </li>
-              <li>
-                <a href="#">iCloud</a>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>Account</summary>
-            <ul>
-              <li>
-                <a href="#">Manage Your Apple ID</a>
-              </li>
-              <li>
-                <a href="#">Apple Store Account</a>
-              </li>
-              <li>
-                <a href="#">iCloud.com</a>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>Apple Store</summary>
-            <ul>
-              <li>
-                <a href="#">Find a Store</a>
-              </li>
-              <li>
-                <a href="#">Shop Online</a>
-              </li>
-              <li>
-                <a href="#">Genius Bar</a>
-              </li>
-              <li>
-                <a href="#">Today at Apple</a>
-              </li>
-              <li>
-                <a href="#">Apple Camp</a>
-              </li>
-              <li>
-                <a href="#">Apple Store App</a>
-              </li>
-              <li>
-                <a href="#">Refurbished and Clearance</a>
-              </li>
-              <li>
-                <a href="#">Financing</a>
-              </li>
-              <li>
-                <a href="#">Apple Trade In</a>
-              </li>
-              <li>
-                <a href="#">Order Status</a>
-              </li>
-              <li>
-                <a href="#">Shopping Help</a>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>For Business</summary>
-            <ul>
-              <li>
-                <a href="#">Apple and Business</a>
-              </li>
-              <li>
-                <a href="#">Shop for Business</a>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>For Education</summary>
-            <ul>
-              <li>
-                <a href="#">Apple and Education</a>
-              </li>
-              <li>
-                <a href="#">Shop for K-12</a>
-              </li>
-              <li>
-                <a href="#">Shop for College</a>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>For Healthcare</summary>
-            <ul>
-              <li>
-                <a href="#">Apple in Healthcare</a>
-              </li>
-              <li>
-                <a href="#">Health on Apple Watch</a>
-              </li>
-              <li>
-                <a href="#">Health Records on iPhone</a>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>For Government</summary>
-            <ul>
-              <li>
-                <a href="#">Shop for Government</a>
-              </li>
-              <li>
-                <a href="#">Shop for Veterans and Military</a>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>Apple Values</summary>
-            <ul>
-              <li>
-                <a href="#">Accessibility</a>
-              </li>
-              <li>
-                <a href="#">Education</a>
-              </li>
-              <li>
-                <a href="#">Environment</a>
-              </li>
-              <li>
-                <a href="#">Inclusion and Diversity</a>
-              </li>
-              <li>
-                <a href="#">Privacy</a>
-              </li>
-              <li>
-                <a href="#">Supplier Responsibility</a>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>About Apple</summary>
-            <ul>
+        <details>
+          <summary>Shop and Learn</summary>
+          <ul>
+            <li>
+              <a href="#">Mac</a>
+            </li>
+            <li>
+              <a href="#">iPad</a>
+            </li>
+            <li>
+              <a href="#">iPhone</a>
+            </li>
+            <li>
+              <a href="#">Watch</a>
+            </li>
+            <li>
+              <a href="#">TV</a>
+            </li>
+            <li>
+              <a href="#">Music</a>
+            </li>
+            <li>
+              <a href="#">AirPods</a>
+            </li>
+            <li>
+              <a href="#">HomePod</a>
+            </li>
+            <li>
+              <a href="#">iPod touch</a>
+            </li>
+            <li>
+              <a href="#">Accessories</a>
+            </li>
+            <li>
+              <a href="#">Gift Cards</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Services</summary>
+          <ul>
+            <li>
+              <a href="#">Apple Music</a>
+            </li>
+            <li>
+              <a href="#">Apple News+</a>
+            </li>
+            <li>
+              <a href="#">Apple TV+</a>
+            </li>
+            <li>
+              <a href="#">Apple Arcade</a>
+            </li>
+            <li>
+              <a href="#">Apple Books</a>
+            </li>
+            <li>
+              <a href="#">Apple Card</a>
+            </li>
+            <li>
+              <a href="#">iCloud</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Account</summary>
+          <ul>
+            <li>
+              <a href="#">Manage Your Apple ID</a>
+            </li>
+            <li>
+              <a href="#">Apple Store Account</a>
+            </li>
+            <li>
+              <a href="#">iCloud.com</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Apple Store</summary>
+          <ul>
+            <li>
+              <a href="#">Find a Store</a>
+            </li>
+            <li>
+              <a href="#">Shop Online</a>
+            </li>
+            <li>
+              <a href="#">Genius Bar</a>
+            </li>
+            <li>
+              <a href="#">Today at Apple</a>
+            </li>
+            <li>
+              <a href="#">Apple Camp</a>
+            </li>
+            <li>
+              <a href="#">Apple Store App</a>
+            </li>
+            <li>
+              <a href="#">Refurbished and Clearance</a>
+            </li>
+            <li>
+              <a href="#">Financing</a>
+            </li>
+            <li>
+              <a href="#">Apple Trade In</a>
+            </li>
+            <li>
+              <a href="#">Order Status</a>
+            </li>
+            <li>
+              <a href="#">Shopping Help</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>For Business</summary>
+          <ul>
+            <li>
+              <a href="#">Apple and Business</a>
+            </li>
+            <li>
+              <a href="#">Shop for Business</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>For Education</summary>
+          <ul>
+            <li>
+              <a href="#">Apple and Education</a>
+            </li>
+            <li>
+              <a href="#">Shop for K-12</a>
+            </li>
+            <li>
+              <a href="#">Shop for College</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>For Healthcare</summary>
+          <ul>
+            <li>
+              <a href="#">Apple in Healthcare</a>
+            </li>
+            <li>
+              <a href="#">Health on Apple Watch</a>
+            </li>
+            <li>
+              <a href="#">Health Records on iPhone</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>For Government</summary>
+          <ul>
+            <li>
+              <a href="#">Shop for Government</a>
+            </li>
+            <li>
+              <a href="#">Shop for Veterans and Military</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Apple Values</summary>
+          <ul>
+            <li>
+              <a href="#">Accessibility</a>
+            </li>
+            <li>
+              <a href="#">Education</a>
+            </li>
+            <li>
+              <a href="#">Environment</a>
+            </li>
+            <li>
+              <a href="#">Inclusion and Diversity</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+            <li>
+              <a href="#">Supplier Responsibility</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>About Apple</summary>
+          <ul>
             <li>
               <a href="#">Newsroom</a>
             </li>
@@ -379,11 +418,27 @@
               <a href="#">Contact Apple</a>
             </li>
           </ul>
-          </details>
+        </details>
       </nav>
+    </section>
+
+    <section class="lastItems">
+      <ul>
+        <li>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.</li>
+        <li><a href="#">United States</a></li>
+        <li>Copyright &copy; 2020 Apple Inc. All rights reserved.</li>
+        <li>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales and Refunds</a>
+          <a href="#">Legal</a>
+          <a href="#">Site Map</a>
+        </li>
+      </ul>
     </section>
   </footer>
 
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
 

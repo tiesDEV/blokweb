@@ -1,14 +1,26 @@
+/* @font-face {
+  font-family: 'San Francisco';
+  src: url(fonts/SF-Pro-Text-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'San Francisco';
+  src: url(fonts/SF-Pro-Text-Medium.otf);
+  font-style: normal;
+  font-weight: 400;
+} */
+/* *, *::before, *::after   {
+  box-sizing:border-box;
+} */
 body {
-  /* Bron: https://stackoverflow.com/questions/32660748/how-to-use-apples-new-san-francisco-font-on-a-webpage */
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Bron: https://stackoverflow.com/questions/32660748/how-to-use-apples-new-san-francisco-font-on-a-webpage */
   margin: 0;
 }
 
 /* NAVIGATIEBAR: */
-
-.pagina1header {
-  padding-top: 5em;
-}
 
 .navbarFixed {
   position: fixed;
@@ -17,11 +29,8 @@ body {
 }
 
 header nav {
-  /* bron: https://web.dev/backdrop-filter/ */
-  backdrop-filter: blur(15px);
-  opacity: .95;
   background-color: #2F3232;
-  transition: .2s;
+  filter: blur(40em;);
 }
 
 header nav ul {
@@ -48,15 +57,15 @@ div.hamburger-menu-animatie span {
 .hamburger-menu-animatie #streep1 {
   height: .15em;
   width: 1.5em;
-  background-color: #C4C7C5;
-  margin: .19em 0;
+  background-color: red;
+  margin: .5em 0;
   transition-duration: .5s;
 }
 
 .hamburger-menu-animatie #streep2 {
   height: .15em;
   width: 1.5em;
-  background-color: #C4C7C5;
+  background-color: blue;
   margin: .5em 0;
   transition-duration: .5s;
 }
@@ -65,9 +74,10 @@ div.hamburger-menu-animatie span {
   position: absolute;
   height: .15em;
   width: 1.5em;
-  background-color: #C4C7C5;
+  background-color: red;
   margin: .5em 0;
-  transform: translate(0, .25em);
+/*   margin: 0 0; */
+    transform: translate(0, .25em);
   transform: rotate(45deg);
   transition-duration: .5s;
 }
@@ -76,8 +86,9 @@ div.hamburger-menu-animatie span {
   position: absolute;
   height: .15em;
   width: 1.5em;
-  background-color: #C4C7C5;
+  background-color: blue;
   margin: .5em 0;
+/*   margin: 0 0; */
   transform: translate(0, -.25em);
   transform: rotate(-45deg);
   transition-duration: .5s;
@@ -92,19 +103,15 @@ div.hamburger {
 }
 
 div.openHamburger {
-  transform:translateY(3.2em);
-  z-index: 300;
-}
-
-div.openHamburger.hamburger2 {
   transform:translateY(0);
+  z-index: 200;
 }
 
 .hamburger-menu {
   position: relative;
   background-color: black;
-  width: 100vw;
-  height: 100vh;
+  width: 375px;
+  height: 667px;
 }
 
 .hamburger-menu input {
@@ -117,7 +124,6 @@ div.openHamburger.hamburger2 {
   font-size: 1em;
   border: none;
   background-color: #1D1C1F;
-  color: white;
 }
 
 .hamburger-menu ul {
@@ -151,22 +157,67 @@ div.openHamburger.hamburger2 {
 }
 
 header img:first-of-type {
+  /* height: 10px;
+  width: 30px; */
   height: 1em;
   width: 2em;
 }
 
-/* BLAUW */
+/* .hamburger-menu {
+  position: relative;
+  background-color: black;
+  width: 375px;
+  height: 667px;
+}
 
+.hamburger-menu input {
+  width: 85%;
+  margin: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1.5em;
+  border-radius: 5px;
+  font-size: 1em;
+  border: none;
+  background-color: #1D1C1F;
+}
+
+.hamburger-menu ul {
+  display: block;
+  margin-left: 0;
+}
+
+.hamburger-menu ul li {
+  position: relative;
+  list-style-type: none;
+  padding-bottom: 2em;
+}
+
+.hamburger-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.hamburger-menu ul li a::before {
+  content: '';
+  height: .02em;
+  width: 85%;
+  background-color: grey;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: .5em;
+} */
+
+/* CORONA INFORMATIE (PAGINA 1): */
+/* Blauw */
 header section:first-of-type {
   background-color: #0071E2;
   text-align: center;
-  font-size: .8em;
-  padding-left: 4em;
-  padding-right: 4em;
-  padding-bottom: 1em;
 }
 
 header section a {
+  /* margin: 2em; */
   line-height: 1.5em;
   text-decoration: none;
   /* Bron: https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link */
@@ -174,6 +225,8 @@ header section a {
 
 header section a:first-of-type {
   color: white;
+  padding: 0 1em 0 1em;
+  /* margin: 2em; */
   line-height: 1.5em;
   text-decoration: none;
   text-align: center;
@@ -181,11 +234,9 @@ header section a:first-of-type {
 }
 
 /* Wit */
-
 header section:nth-of-type(2) p a {
   color: #0065CB;
   padding: 0;
-  font-size: 1em;
 }
 
 header section p {
@@ -193,14 +244,10 @@ header section p {
   color: black;
   text-align: center;
   margin: 0;
-  font-size: .8em;
-  padding: 1em 2em;
 }
 
 /* MAIN */
-
 /* SECTION 1: IPHONE SE */
-
 main.pagina1main {
   overflow-x: hidden;
 }
@@ -235,6 +282,11 @@ main section p, p a {
   text-decoration: none;
 }
 
+main section p a:first-of-type {
+  color: #86858B;
+  text-decoration: none;
+}
+
 main section ul {
   text-align: center;
   padding: 0;
@@ -250,14 +302,14 @@ main section ul li a {
   text-decoration: none;
 }
 
+/* (PAGINA 2) MAIN */
+/* IPHONE SE */
 /* SECTION 2: IPHONE 11 (UITZONDERINGEN) */
-
 main section:nth-of-type(2) {
   background-color: #F9FAF9;
 }
 
-/* bron: http://nthmaster.com/ */
-main.pagina1main section:nth-of-type(n+2):nth-of-type(-n+6) h2, .pagina1main section:nth-of-type(n+2):nth-of-type(-n+6) h3 {
+main section:nth-of-type(2) h2, section:nth-of-type(2) h3 {
   color: black;
 }
 
@@ -270,9 +322,12 @@ main img:nth-of-type(2) {
 }
 
 /* SECTION 3: IPAD PRO (UITZONDERINGEN) */
-
 main section:nth-of-type(3) {
   background-color: #F9FAF9;
+}
+
+main section:nth-of-type(3) h2, section:nth-of-type(3) h3 {
+  color: black;
 }
 
 main img:nth-of-type(3) {
@@ -284,9 +339,12 @@ main img:nth-of-type(3) {
 }
 
 /* SECTION 4: COLLEGE (UITZONDERINGEN) */
-
 main section:nth-of-type(4) {
   background-color: #F0EFF2;
+}
+
+main section:nth-of-type(4) h2, section:nth-of-type(4) h3 {
+  color: black;
 }
 
 main section:nth-of-type(4) h2 {
@@ -295,9 +353,12 @@ main section:nth-of-type(4) h2 {
 }
 
 /* SECTION 5: AIRPODS (UITZONDERINGEN) */
-
 main section:nth-of-type(5) {
   background-color: #FBFAFD;
+}
+
+main section:nth-of-type(5) h2, section:nth-of-type(5) h3 {
+  color: black;
 }
 
 main section:nth-of-type(5) h3 {
@@ -306,9 +367,12 @@ main section:nth-of-type(5) h3 {
 }
 
 /* SECTION 6: APPLE CARD */
-
 main section:nth-of-type(6) {
   background-color: #FBFAFD;
+}
+
+main section:nth-of-type(6) h2, section:nth-of-type(6) h3, section:nth-of-type(6) h3 a sup {
+  color: black;
 }
 
 main section:nth-of-type(6) h3 a {
@@ -320,13 +384,7 @@ main section:nth-of-type(6) h2 {
   margin-right: 4em;
 }
 
-main section:nth-of-type(6) sup {
-  color: black;
-
-}
-
 /* SECTION 7: LITTLE VOICE */
-
 main section:nth-of-type(7) h4, section:nth-of-type(7) a {
   position: absolute;
   z-index: 1;
@@ -372,7 +430,6 @@ main section:nth-of-type(7) img:nth-of-type(3) {
 }
 
 /* SECTION 8: APPLE WATCH */
-
 main section:nth-of-type(8) {
   background-color: #FBFAFD;
 }
@@ -403,7 +460,6 @@ main section:nth-of-type(8) h4 {
 }
 
 /* SECTION 9: APPLE'S APPROACH */
-
 main section:nth-of-type(9) {
   background-color: #FBFAFD;
 }
@@ -415,9 +471,7 @@ main section:nth-of-type(9) h2 {
 }
 
 /* FOOTER */
-
 /* SECTION 1: ALGEMENE INFORMATIE */
-
 footer {
   background-color: #FBFAFD;
 }
@@ -526,6 +580,8 @@ section.pagina2header ul {
   padding: 16px;
   background-color: white;
   padding-top: 0;
+  /* display: flex;
+  justify-content: space-around; */
 }
 
 section.pagina2header ul li {
@@ -553,9 +609,7 @@ section.pagina2header2 p {
 }
 
 /* (PAGINA 2) MAIN */
-
 /* BUY IPHONE SE */
-
 main.pagina2main section {
   background-color: white;
   text-align: center;
@@ -567,6 +621,7 @@ main.pagina2main section h3 {
 }
 
 main.pagina2main section h1, a {
+  text-align: center;
   text-decoration: none;
 }
 
@@ -579,15 +634,16 @@ main.pagina2main section:first-of-type p {
   padding-bottom: 1em;
 }
 
+/* H2 .kiezen titels */
+
 .pagina2main h2.kiezen {
   text-align: left;
   padding-left: 1em;
   margin-left: 0;
   margin-right: 0;
-  color: black;
 }
 
-/* PAGINA 2 CHOOSE COLOR */
+/* CHOOSE COLOR */
 
 /* bron: https://markheath.net/post/customize-radio-button-css */
 img.productRed {
@@ -612,10 +668,6 @@ input[type="radio"] {
   display: none;
 }
 
-input[type="radio"]:checked+label {
-  border: 1px solid grey;
-}
-
 label {
   font-size: .7em;
   padding: 2em;
@@ -625,13 +677,24 @@ label {
   width: auto;
 }
 
-main.pagina2main section a.formLinkLeft {
-  position: relative;
-  text-align: left;
-  display: block;
-  margin-left: 1.5em;
-  padding-top: 1em;
+/* form.color label:first-of-type {
+  background-image: url(images/input-white.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+  background-size: 20%;
+} */
+label:hover {
+  cursor: pointer;
+  border: 2px solid #006FC9;
 }
+
+label:active {
+  box-shadow: 0 0 0 4px lightblue;
+}
+
+/* .formLinkLeft {
+  text-align: left !important;
+} */
 
 .chooseColor {
   display: block;
@@ -695,12 +758,11 @@ p.carrierUitleg {
 font-size: .7em;
 }
 
-/* PAGINA 2 CONTINUE EN HEART BUTTON */
-
 .continueandheart {
   margin: 2em 0 2em 1.5em;
   display: flex;
   justify-content: space-between;
+  background-color: #F1F2F1;
 }
 
 button.continue {
@@ -709,18 +771,61 @@ button.continue {
   border: none;
   border-radius: 4px;
   border-color: #d5d6d5;
-  padding: .6em 9em;
+  padding: .6em 8em .6em 8em;
 }
 
-section.continueandheart button:nth-of-type(2) {
-  font-size: 1.5em;
-  background: none;
-  color: #006FC9;
-  border: none;
-  border-radius: 4px;
-  border-color: #d5d6d5;
-  padding-right: .8em;
+button.continue:hover {
+  filter: brightness(110%);
 }
+
+button.continue:active {
+  box-shadow: 0 0 0 4px lightblue;
+}
+
+img.heart {
+  width: 8%;
+  padding-right: 2em;
+}
+
+/* .pagina2main ul.information {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.pagina2main ul.information li.text {
+   transform: translateX(50%);
+}
+
+.pagina2main ul.information li img {
+  position: relative;
+  width: 20%;
+  margin: 2em 5em 0;
+} */
+/*
+.pagina2main ul.information {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.pagina2main ul.information li.text {
+  margin: auto;
+  padding: 2em 2em;
+}
+
+.pagina2main ul.information li img {
+  position: absolute;
+}
+*/
+
+/* .pagina2main section ul li img {
+  height: 5em;
+  position: relative;
+  margin-top: 5em; */
+
+/* } */
+
+/* PAGINA 2 UITKLAPMENU'S */
 
 div.information ul {
   padding: 0;
@@ -786,21 +891,6 @@ div.information img {
 div.appleTVsection {
   position: relative;
   background-color: black;
-  text-align: center;
-}
-
-div.appleTVsection ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-left: 5em;
-  padding-right: 5em;
-  text-align: center;
-}
-
-div.appleTVsection ul li {
-  list-style-type: none;
-  margin-bottom: 3em;
 }
 
 div.appleTVsection p {
@@ -810,7 +900,7 @@ div.appleTVsection p {
 div.appleTVsection img {
   position: absolute;
   width: 20%;
-  top: 15%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: auto;
@@ -818,6 +908,11 @@ div.appleTVsection img {
 }
 
 /* PAGINA 2 UITKLAPMENU'S */
+
+/* bron: https://stackoverflow.com/questions/21092055/remove-blue-border-from-open-details-element-in-chrome */
+summary {
+  outline: none;
+}
 
 .pagina2main section.questionSummary summary::-webkit-details-marker {
   display: none;
@@ -867,17 +962,6 @@ div.appleTVsection img {
 
 /* PAGINA 2 VERGELIJKEN */
 
-.h1compare {
-  margin-top: 2em;
-  font-size: 1.7em;
-  text-align: center;
-}
-
-.formMiddle {
-  display: block;
-  text-align: center;
-}
-
 .vergelijken {
   display: flex;
   flex-wrap: wrap;
@@ -897,7 +981,6 @@ li.iPhones {
 .vergelijken li.specs {
   padding-top: 1em;
   font-size: .8em;
-  color: black;
 }
 
 .algemeneInfo {
@@ -948,51 +1031,62 @@ padding-top: .7em;
   font-size: 1em;
 }
 
-/* TOEGANKELIJKHEID */
+/* .vergelijken li {
+  list-style-type: 0;
+} */
 
-details summary {
-  cursor: pointer;
+/* .iPhones {
+  padding: 0;
+} */
+
+/* .vergelijken li {
+  list-style-type: none;
+} */
+
+/* .vergelijken .algemeneInfo h2, h3 {
+  font-size: 1em;
+} */
+
+/* .vergelijken .algemeneInfo {
+  list-style-type: none;
+} */
+
+/* .vergelijken .specs li {
+  font-size: .7em;
+  margin: 0;
+  padding-left: 0;
+} */
+
+/* .vergelijken li.iPhones {
+  padding-right: 15em;
+  margin: 0;
 }
 
-button {
-  cursor: pointer;
+.vergelijken ul {
+  margin: 0;
+  padding: 2em;
 }
 
-a:hover {
-  text-decoration: underline;
+.vergelijken ul li {
+  list-style-type: none;
+
 }
 
-/* Bron: https://www.w3schools.com/cssref/css_selectors.asp */
-
-* {
-  outline-color: lightblue;
+.vergelijken h3, p {
+  color: black;
+  text-align: left;
+  padding: 0;
 }
 
-label:hover {
-  cursor: pointer;
-  border: 2px solid #006FC9;
-}
 
-label:active {
-  box-shadow: 0 0 0 4px lightblue;
-}
+.vergelijken ul li img {
+  width: 20%;
+} */
 
-button.continue:hover {
-  filter: brightness(110%);
-}
+/* div ul li img {
+  max-height: 20%;
+} */
 
-button.continue:active {
-  box-shadow: 0 0 0 4px lightblue;
-}
 
-button.heart:hover {
-  filter: brightness(110%);
-}
-
-button.heart:active {
-  box-shadow: 0 0 0 4px lightblue;
-}
-
-.hamburger-menu-animatie {
-  cursor: pointer;
-}
+/* NOG VERANDEREN */
+/* OL bij de footer van pagina 2 moeten nog cijfers voor komen */

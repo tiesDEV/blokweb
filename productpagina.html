@@ -6,17 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
-  <title>iPhone SE</title>
+  <title>Buy iPhone SE - Apple</title>
 </head>
 
 <body>
 
   <header>
+
     <nav>
       <ul>
         <li>
-          <a href="#"><img src="images/menu.svg" alt="hamburger menu"></a>
-          <!-- bron: https://www.flaticon.com/authors/pixel-perfect -->
+          <div tabindex="0" class="hamburger-menu-animatie">
+            <span id="streep1"></span>
+            <span id="streep2"></span>
+          </div>
         </li>
         <li>
           <a href="index.html"><img src="images/logo.svg" alt="Apple logo"></a>
@@ -28,87 +31,181 @@
         </li>
       </ul>
     </nav>
+
+    <div class="hamburger hamburger2">
+      <nav class="hamburger-menu">
+
+        <input type="text" placeholder="Search apple.com">
+
+        <ul>
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">Tv</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+
   </header>
 
-  <main>
-    <section>
-      <h1>iPhone SE</h1>
-      <h2>$16.62/mo.*or $399.00</h2>
-    </section>
+  <main class="pagina2main">
 
-    <section>
-      <p>Pay for your new iPhone over 24 months at 0% APR with Apple Card. Just select Apple Card Monthly Installments and continue to apply. <a href="#">Learn more</a></p>
-    </section>
-
-    <section>
-      <p>New</p>
-      <h1>Buy iPhone SE</h1>
-      <h2>Get up to $170 off with trade-in*</h2>
-      <a href="#">See how Apple Trade in works</a>
-      <img src="images/page2 mobile section 1.jpeg" alt="iPhone SE's">
-      <a href="#">Chat with an iPhone Specialist</a>
-    </section>
-
-    <section>
-      <h2>Choose your finish.</h2>
+    <section class="pagina2header">
       <ul>
-        <li>White</li>
-        <li>Black</li>
-        <li>(PRODUCT)RED</li>
+        <li>
+          <h1>iPhone SE</h1>
+        </li>
+        <li>From $16.62/mo. or $399</li>
       </ul>
-      <img src="images/page2 productred.png" alt="Product Red logo">
+    </section>
+
+    <section class="pagina2header2">
+      <p>Pay for your new iPhone over 24 months at 0% APR with Apple Card. Just select Apple Card Monthly Installments and continue to apply. <a href="#">Learn More ></a></p>
+    </section>
+
+    <section>
+      <h3>New</h3>
+      <h1>Buy iPhone SE</h1>
+      <p>Get up to $170 off with trade-in*</p>
+      <a href="#">See how Apple Trade in works</a>
+      <img src="images/page2mobilesection1.jpeg" alt="iPhone SE's">
+      <a href="#">&#x1f4ac; Chat with an iPhone Specialist</a>
+    </section>
+
+    <section>
+      <h2 class="kiezen">Choose your finish.</h2>
+
+      <form class="color" action="index.html" method="post">
+
+        <input type="radio" id="white" name="color" value="white">
+        <label tabindex="0" for="white"><img class="chooseColor" src="images/input-white.jpeg" alt="Witte kleur">White</label>
+
+        <input type="radio" id="black" name="color" value="black">
+        <label tabindex="0" for="black"><img class="chooseColor" src="images/input-black.jpeg" alt="Zwarte kleur">Black</label>
+
+        <input type="radio" id="red" name="color" value="red">
+        <label tabindex="0" for="red"><img class="chooseColor" src="images/input-red.jpeg" alt="Rode kleur">(PRODUCT)RED</label>
+
+      </form>
+
+      <img class="productRed" src="images/page2productred.png" alt="Product Red logo">
       <p>Every iPhone SE (PRODUCT)RED purchase now contributes directly to the Global Fund to combat COVID-19.</p>
     </section>
 
     <section>
-      <h2>Choose your capacity.</h2>
-      <ul>
-        <li>64GB**<p>From $16.62/mo.* per month or $399</p>
-        </li>
-        <li>128GB**<p>From $18.70/mo.* per month or $449</p>
-        </li>
-        <li>256GB**<p>From $22.87/mo.* per month or $549</p>
-        </li>
-      </ul>
+      <h2 class="kiezen">Choose your capacity.</h2>
+
+      <form class="capacity" action="index.html" method="post">
+
+        <input type="radio" id="64gb" name="capacity" value="64gb">
+        <label tabindex="0" for="64gb">64GB** <span class="GBprice">From $16.62/mo.* or $399</span>
+          <!-- <p>From $16.62/mo.* or $399</p> -->
+        </label>
+
+        <input type="radio" id="128gb" name="capacity" value="128gb">
+        <label tabindex="0" for="128gb">128GB** <span class="GBprice">From $18.70/mo.* or $449</span>
+          <!-- <p>From $18.70/mo.* or $449</p> -->
+        </label>
+
+        <input type="radio" id="256gb" name="capacity" value="256gb">
+        <label tabindex="0" for="256gb">256GB** <span class="GBprice">From $22.87/mo.* or $549</span>
+          <!-- <p>From $22.87/mo.* or $549</p> -->
+        </label>
+
+      </form>
+
     </section>
 
     <section>
-      <h2>Choose your carrier.</h2>
-      <p>We’ll work with your current carrier to activate your new iPhone so you can keep your existing number and rate plan.</p>
-      <ul>
-        <li><img src="images/att.png" alt="AT&T logo">
-          <p>From $16.62/mo.* per month or $399</p>
-        </li>
-        <li><img src="images/sprint.png" alt="Sprint logo">
-          <p>From $16.62/mo.* per month or $399</p>
-        </li>
-        <li><img src="images/tmobile.png" alt="T-Mobile logo">
-          <p>From $16.62/mo.* per month or $399</p>
-        </li>
-        <li><img src="images/verizon.png" alt="Verizon logo">
-          <p>From $16.62/mo.* per month or $399</p>
-        </li>
-        <li>
-          <h3>SIM-Free - activate with any carrier later</h3>
-          <p>From $16.62/mo.* per month or $399</p>
-        </li>
-      </ul>
-      <a href="#">Will my new iPhone be unlocked?</a>
+      <h2 class="kiezen">Choose your carrier.</h2>
+      <p class="carrierUitleg">We’ll work with your current carrier to activate your new iPhone so you can keep your existing number and rate plan.</p>
+
+      <form class="carrier" action="index.html" method="post">
+
+        <input type="radio" id="ATT" name="carrier" value="ATT">
+        <label tabindex="0" for="ATT"><img class="chooseCarrier1" src="images/att.png" alt="AT&T logo">
+          From $16.62/mo.* per month or $399</label>
+
+        <input type="radio" id="Sprint" name="carrier" value="Sprint">
+        <label tabindex="0" for="Sprint"><img class="chooseCarrier1" src="images/sprint.png" alt="Sprint logo">
+          From $16.62/mo.* per month or $399</label>
+
+        <input type="radio" id="T-Mobile" name="carrier" value="T-Mobile">
+        <label tabindex="0" for="T-Mobile"><img class="chooseCarrier2" src="images/tmobile.png" alt="T-Mobile logo">
+          From $16.62/mo.* per month or $399</label>
+
+        <input type="radio" id="Verizon" name="carrier" value="Verizon">
+        <label tabindex="0" for="Verizon"><img class="chooseCarrier2" src="images/verizon.png" alt="Verizon logo">
+          From $16.62/mo.* per month or $399</label>
+
+        <input type="radio" id="SIM-Free" name="carrier" value="SIM-Free">
+        <label tabindex="0" class="simfreeuitzondering" for="SIM-Free"><span>SIM-Free - activate with any carrier later</span> From $16.62/mo.* per month or $399</label>
+
+      </form>
+
+      <a class="formLinkLeft" href="#">Will my new iPhone be unlocked?</a>
     </section>
 
     <section>
-      <h2>Do you have a smartphone to trade in?.</h2>
-      <a href="#">See how Apple Trade In works</a>
-      <ul>
-        <li>No</li>
-        <li>Yes<p>Up to $170 off*</p>
-        </li>
-      </ul>
-      <button type="button" name="button">Continue</button>
-      <button type="button" name="button">&hearts;</button>
+      <h2 class="kiezen">Do you have a smartphone to trade in?</h2>
+      <a class="formLinkLeft" href="#">See how Apple Trade In works</a>
+
+      <form class="trade-in" action="index.html" method="post">
+
+        <input type="radio" id="No" name="trade-in" value="No">
+        <label tabindex="0" for="No">No</label>
+
+        <input type="radio" id="Yes" name="trade-in" value="Yes">
+        <label tabindex="0" class="YesTradeIn" for="Yes">Yes<span class="priceTradeIn"> Up to $170 off*</span></label>
+
+      </form>
+
     </section>
 
-    <section>
+    <section class="continueandheart">
+      <button class="continue" type="button" name="continue">Continue</button>
+      <button class="heart" type="button" name="heart">&#9825;</button>
+      <!-- <img class="heart" src="images/heart.png" alt="heart"> -->
+    </section>
+
+    <div class="information">
+      <ul>
+        <li><img src="images/delivery.png" alt="Delivery"></li>
+        <li class="text">Fast, free, no-contact delivery</li>
+        <li><img src="images/personal.png" alt="Delivery"></li>
+        <li class="text">Free, Personal Session </li>
+        <li><img src="images/returns.png" alt="Delivery"></li>
+        <li class="text">Free and easy returns</li>
+      </ul>
+
+    </div>
+
+    <div class="gallerij">
+
+      <div class="carousselimages">
+        <img class="image1 showImage" src="images/page2slider1.jpeg" alt="White iPhone">
+        <img class="image2" src="images/page2slider2.jpeg" alt="">
+        <img class="image3" src="images/page2slider3.jpeg" alt="">
+        <img class="image4" src="images/page2slider4.jpeg" alt="">
+        <img class="image5" src="images/page2slider5.jpeg" alt="">
+        <img class="image6" src="images/page2slider6.jpeg" alt="">
+      </div>
+
+      <div class="carousselbullets">
+        <span class="bullet1 fotoactive"></span>
+        <span class="bullet2"></span>
+        <span class="bullet3"></span>
+        <span class="bullet4"></span>
+        <span class="bullet5"></span>
+        <span class="bullet6"></span>
+      </div>
+
+    </div>
+
+    <!-- <section>
       <ul>
         <li><img src="images/page2 slider1.jpeg" alt=""></li>
         <li><img src="images/page2 slider2.jpeg" alt=""></li>
@@ -117,72 +214,183 @@
         <li><img src="images/page2 slider5.jpeg" alt=""></li>
         <li><img src="images/page2 slider6.jpeg" alt=""></li>
       </ul>
-    </section>
+    </section> -->
 
-    <section>
+    <div class="appleTVsection">
+      <img src="images/appletvlogo.png" alt="AppleTV promo">
       <p>Get 1 year of Apple TV+ free when you buy an iPhone.***</p>
-      <a href="#">Try it free</a>
-      <a href="#">Learn moree</a>
-      <img src="images/appletv.png" alt="AppleTV promo">
+      <ul>
+        <li><a href="#">Try it free ></a></li>
+        <li><a href="#">Learn more ></a></li>
+      </ul>
+    </div>
+
+
+    <section class="questionSummary">
+      <details>
+        <summary>What's in the Box</summary>
+          </details>
+
+      <details>
+        <summary>Frequently Asked Questions</summary>
+        <details class="questionSmall">
+          <summary class="question">What purchase options are there for buying an iPhone?</summary>
+          <ul>
+            <li>You can either pay for your new iPhone in full or pay monthly with carrier financing, iPhone Payments, and now Apple Card Monthly Installments. Your carrier service plan will be charged separately. Just choose the option that works
+              for you.</li>
+          </ul>
+        </details>
+        <details class="questionSmall">
+          <summary class="question">What are Apple Card Monthly Installments?</summary>
+          <ul>
+            <li>With Apple Card Monthly Installments, you can pay for any iPhone monthly and interest-free with Apple Card. The cost of your iPhone is spread over 24 months. You can add a trade-in to make your payments even lower.</li>
+            <li>Customers in US Territories should contact Goldman Sachs Bank USA for questions about installments.</li>
+          </ul>
+        </details>
+      </details>
     </section>
 
-    <section>
-      <nav>
-        <ul>
-          <li>What's in the Box</li>
-          <li>Frequently Asked Questions</li>
+    <!-- <div>
+
+<h2>Compare iPhone models.</h2>
+<a href="#">Find the best iPhone for you ></a>
+
+    <ul class="vergelijken">
+
+      <li class="iPhones">
+        <ul class="algemeneInfo">
+          <li><img src="images/compare iphone11pro.png" alt="iPhone 11 Pro"></li>
+          <li><h2>iPhone 11 Pro</h2></li>
+          <li><h3>Starting at $999</h3></li>
         </ul>
-      </nav>
-    </section>
+        <ul class="specs">
+          <li>Triple-camera system (Ultra Wide, Wide, Telephoto)</li>
+          <li>Up to 20 hours of video playback<sup>1</sup></li>
+          <li>Water resistant to a depth of 4 meter for up to 30 minutes<sup>2</sup></li>
+          <li>5.8” or 6.5” Super Retina XDR display</li>
+        </ul>
+      </li>
 
-    <section>
-      <ul>
-        <li>What's in the Box</li>
-        <li>Frequently Asked Questions</li>
-      </ul>
-    </section>
+      <li class="iPhones">
+        <ul class="algemeneInfo">
+          <li><img src="images/compare iphone11.png" alt="iPhone 11"></li>
+          <li><h2>iPhone 11</h2></li>
+          <li><h3>Starting at $699</h3></li>
+        </ul>
+        <ul class="specs">
+          <li>Dual-camera system (Ultra Wide, Wide)</li>
+          <li>Up to 17 hours of video playback1</li>
+          <li>Water resistant to a depth of 2 meters for up to 30 minutes2</li>
+          <li>6.1” Liquid Retina HD display3</li>
+        </ul>
+      </li>
 
-    <section>
-      <ul>
-        <li>
-          <h2>iPhone 11 Pro</h2>
-          <h3>Starting at $999</h3>
-          <p>Single-camera system (Wide)
-            Up to 13 hours of video playback1
-            Water resistant to a depth of 1 meter for up to 30 minutes2
-            4.7” Retina HD display</p>
-          <img src="images/compare iphone11pro.png" alt="iPhone 11 Pro">
+      <li class="iPhones">
+        <ul class="algemeneInfo">
+          <li><img src="images/compare iphonese.png" alt="iPhone SE"></li>
+          <li><p>New</p></li>
+          <li><h2>iPhone SE</h2></li>
+          <li><h3>Starting at $399</h3></li>
+        </ul>
+        <ul class="specs">
+          <li>Single-camera system (Wide)</li>
+          <li>Up to 13 hours of video playback1</li>
+          <li>Water resistant to a depth of 1 meter for up to 30 minutes2</li>
+          <li>4.7” Retina HD display</li>
+        </ul>
+      </li>
+
+      <li class="iPhones">
+        <ul class="algemeneInfo">
+          <li><img src="images/compare iphonexr.png" alt="iPhone XR"></li>
+          <li><h2>iPhone XR</h2></li>
+          <li><h3>Starting at $599</h3></li>
+        </ul>
+        <ul class="specs">
+          <li>Single-camera system (Wide)</li>
+          <li>Up to 16 hours of video playback1</li>
+          <li>Water resistant to a depth of 1 meter for up to 30 minutes2</li>
+          <li>6.1” Liquid Retina HD display3</li>
+        </ul>
+      </li>
+    </ul>
+</div> -->
+
+    <div>
+
+      <h1 class="h1compare">Compare iPhone models.</h1>
+      <a class="formMiddle" href="#">Find the best iPhone for you ></a>
+
+      <ul class="vergelijken">
+
+        <li class="iPhones">
+          <ul class="algemeneInfo">
+            <li><img class="iPhone11Pro" src="images/compareiphone11pro.png" alt="iPhone 11 Pro"></li>
+            <li>
+              <h2>iPhone 11 Pro</h2>
+            </li>
+            <li>
+              <h3>Starting at $999</h3>
+            </li>
+            <li class="specs">Triple-camera system (Ultra Wide, Wide, Telephoto)</li>
+            <li class="specs">Up to 20 hours of video playback<sup>1</sup></li>
+            <li class="specs">Water resistant to a depth of 4 meter for up to 30 minutes<sup>2</sup></li>
+            <li class="specs">5.8” or 6.5” Super Retina XDR display</li>
+          </ul>
         </li>
-        <li>
-          <h2>iPhone 11</h2>
-          <h3>Starting at $699</h3>
-          <p>Dual-camera system (Ultra Wide, Wide)
-            Up to 17 hours of video playback1
-            Water resistant to a depth of 2 meters for up to 30 minutes2
-            6.1” Liquid Retina HD display3</p>
-          <img src="images/compare iphone11.png" alt="iPhone 11">
+
+        <li class="iPhones">
+          <ul class="algemeneInfo">
+            <li><img class="iPhone11" src="images/compareiphone11.png" alt="iPhone 11"></li>
+            <li>
+              <h2>iPhone 11</h2>
+            </li>
+            <li>
+              <h3>Starting at $699</h3>
+            </li>
+            <li class="specs">Dual-camera system (Ultra Wide, Wide)</li>
+            <li class="specs">Up to 17 hours of video playback1</li>
+            <li class="specs">Water resistant to a depth of 2 meters for up to 30 minutes2</li>
+            <li class="specs">6.1” Liquid Retina HD display3</li>
+          </ul>
         </li>
-        <li>
-          <p>New</p>
-          <h2>iPhone SE</h2>
-          <h3>Starting at $399</h3>
-          <p>Single-camera system (Wide)
-            Up to 13 hours of video playback1
-            Water resistant to a depth of 1 meter for up to 30 minutes2
-            4.7” Retina HD display</p>
-          <img src="images/compare iphonese.png" alt="iPhone SE">
+
+        <li class="iPhones">
+          <ul class="algemeneInfo">
+            <li><img src="images/compareiphonese.png" alt="iPhone SE"></li>
+            <li>
+              <p>New</p>
+            </li>
+            <li>
+              <h2>iPhone SE</h2>
+            </li>
+            <li>
+              <h3>Starting at $399</h3>
+            </li>
+            <li class="specs">Single-camera system (Wide)</li>
+            <li class="specs">Up to 13 hours of video playback1</li>
+            <li class="specs">Water resistant to a depth of 1 meter for up to 30 minutes2</li>
+            <li class="specs">4.7” Retina HD display</li>
+          </ul>
         </li>
-        <li>
-          <h2>iPhone XR</h2>
-          <h3>Starting at $599</h3>
-          <p>Single-camera system (Wide)
-            Up to 16 hours of video playback1
-            Water resistant to a depth of 1 meter for up to 30 minutes2
-            6.1” Liquid Retina HD display3</p>
-          <img src="images/compare iphonexr.png" alt="iPhone XR">
+
+        <li class="iPhones">
+          <ul class="algemeneInfo">
+            <li><img class="iPhoneXR" src="images/compareiphonexr.png" alt="iPhone XR"></li>
+            <li>
+              <h2>iPhone XR</h2>
+            </li>
+            <li>
+              <h3>Starting at $599</h3>
+            </li>
+            <li class="specs">Single-camera system (Wide)</li>
+            <li class="specs">Up to 16 hours of video playback1</li>
+            <li class="specs">Water resistant to a depth of 1 meter for up to 30 minutes2</li>
+            <li class="specs">6.1” Liquid Retina HD display3</li>
+          </ul>
         </li>
       </ul>
-    </section>
+    </div>
 
   </main>
 
@@ -190,53 +398,287 @@
     <section>
       <ul>
         <li>
-          <p>1A portion of the proceeds from every (PRODUCT)RED purchase goes to the Global Fund to fight AIDS. From now until September 30, those proceeds will go to the Global Fund’s COVID-19 Response.</p>
+          1A portion of the proceeds from every (PRODUCT)RED purchase goes to the Global Fund to fight AIDS. From now until September 30, those proceeds will go to the Global Fund’s COVID-19 Response.
         </li>
         <li>
-          <p>* Trade In: Trade‑in values vary. iPhone SE promotional pricing is after trade‑in of iPhone 8 in good condition. Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens One or Apple Card Monthly Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon. Taxes and shipping not included. Customers in US Territories should contact Goldman Sachs Bank USA at 877-255-5923 for questions about Apple Card Monthly Installments. Additional Apple Card Monthly Installments terms are in the Customer Agreement. Additional iPhone Payments terms are here.</p>
+          * Trade In: Trade‑in values vary. iPhone SE promotional pricing is after trade‑in of iPhone 8 in good condition. Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18. Apple or
+          its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax
+          may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens One or Apple
+          Card Monthly Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon. Taxes and shipping not included. Customers in US Territories should contact Goldman Sachs Bank USA at 877-255-5923 for questions about Apple Card
+          Monthly Installments. Additional Apple Card Monthly Installments terms are in the Customer Agreement. Additional iPhone Payments terms are here.
         </li>
         <li>
-          <p>** Available space is less and varies due to many factors. A standard configuration uses approximately 11GB to 14GB of space (including iOS and preinstalled apps) depending on the model and settings. Preinstalled apps use about 4GB, and you can delete these apps and restore them. Storage capacity subject to change based on software version and may vary by device.</p>
+          ** Available space is less and varies due to many factors. A standard configuration uses approximately 11GB to 14GB of space (including iOS and preinstalled apps) depending on the model and settings. Preinstalled apps use about 4GB, and you
+          can delete these apps and restore them. Storage capacity subject to change based on software version and may vary by device.
         </li>
         <li>
-          <p>*** Apple TV+ is $4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.</p>
+          *** Apple TV+ is $4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.
         </li>
         <li>
-          <p>iPhone SE is splash, water, and dust resistant and was tested under controlled laboratory conditions with a rating of IP67 under IEC standard 60529 (maximum depth of 1 meter up to 30 minutes). Splash, water, and dust resistance are not permanent conditions and resistance might decrease as a result of normal wear. Do not attempt to charge a wet iPhone; refer to the user guide for cleaning and drying instructions. Liquid damage not covered under warranty.</p>
+          iPhone SE is splash, water, and dust resistant and was tested under controlled laboratory conditions with a rating of IP67 under IEC standard 60529 (maximum depth of 1 meter up to 30 minutes). Splash, water, and dust resistance are not
+          permanent conditions and resistance might decrease as a result of normal wear. Do not attempt to charge a wet iPhone; refer to the user guide for cleaning and drying instructions. Liquid damage not covered under warranty.
         </li>
       </ul>
       <ol>
-        <li>All battery claims depend on network configuration and many other factors; actual results will vary. Battery has limited recharge cycles and may eventually need to be replaced by Apple service provider. Battery life and charge cycles vary by use and settings. See apple.com/batteries and apple.com/iphone/battery.html for more information.</li>
-        <li>iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, iPhone X, iPhone XS, iPhone XS Max, iPhone XR, iPhone SE, iPhone 11 Pro, iPhone 11 Pro Max, and iPhone 11 are splash, water, and dust resistant and were tested under controlled laboratory conditions; iPhone 11 Pro and iPhone 11 Pro Max have a rating of IP68 under IEC standard 60529 (maximum depth of 4 meters up to 30 minutes); iPhone XS, iPhone XS Max, and iPhone 11 have a rating of IP68 under IEC standard 60529 (maximum depth of 2 meters up to 30 minutes); and iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, iPhone X, iPhone XR, and iPhone SE have a rating of IP67 under IEC standard 60529 (maximum depth of 1 meter up to 30 minutes). Splash, water, and dust resistance are not permanent conditions and resistance might decrease as a result of normal wear. Do not attempt to charge a wet iPhone; refer to the user guide for cleaning and drying instructions. Liquid damage not covered under warranty.</li>
-        <li>The display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 5.85 inches (iPhone 11 Pro, iPhone XS, iPhone X), 6.46 inches (iPhone 11 Pro Max, iPhone XS Max), or 6.06 inches (iPhone 11, iPhone XR) diagonally. Actual viewable area is less.</li>
+        <li>All battery claims depend on network configuration and many other factors; actual results will vary. Battery has limited recharge cycles and may eventually need to be replaced by Apple service provider. Battery life and charge cycles vary
+          by use and settings. See apple.com/batteries and apple.com/iphone/battery.html for more information.</li>
+        <li>iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, iPhone X, iPhone XS, iPhone XS Max, iPhone XR, iPhone SE, iPhone 11 Pro, iPhone 11 Pro Max, and iPhone 11 are splash, water, and dust resistant and were tested under controlled laboratory
+          conditions; iPhone 11 Pro and iPhone 11 Pro Max have a rating of IP68 under IEC standard 60529 (maximum depth of 4 meters up to 30 minutes); iPhone XS, iPhone XS Max, and iPhone 11 have a rating of IP68 under IEC standard 60529 (maximum
+          depth of 2 meters up to 30 minutes); and iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, iPhone X, iPhone XR, and iPhone SE have a rating of IP67 under IEC standard 60529 (maximum depth of 1 meter up to 30 minutes). Splash, water, and
+          dust resistance are not permanent conditions and resistance might decrease as a result of normal wear. Do not attempt to charge a wet iPhone; refer to the user guide for cleaning and drying instructions. Liquid damage not covered under
+          warranty.</li>
+        <li>The display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 5.85 inches (iPhone 11 Pro, iPhone XS, iPhone X), 6.46
+          inches (iPhone 11 Pro Max, iPhone XS Max), or 6.06 inches (iPhone 11, iPhone XR) diagonally. Actual viewable area is less.</li>
       </ol>
       <ul>
         <li>† Daily Cash is earned when each monthly payment is made on your Apple Card when you purchase an iPhone with Apple iPhone Payments.</li>
-        <li>◊ AppleCare+ provides up to two incidents of accidental damage protection every 12 months. AppleCare+ with Theft and Loss adds up to two incidents of theft or loss coverage every 12 months. Each incident is subject to a service fee or deductible. Taxes may apply. Theft and loss coverage requires you to have Find My iPhone enabled on your device at the time it is lost or stolen. Find My iPhone should remain enabled and your iPhone should remain associated with your Apple ID throughout the theft or loss claim process. Disabling Find My iPhone will void all coverage of theft and loss. You are not required to purchase AppleCare+ with Theft and Loss to participate in the iPhone Upgrade Program.</li>
+        <li>◊ AppleCare+ provides up to two incidents of accidental damage protection every 12 months. AppleCare+ with Theft and Loss adds up to two incidents of theft or loss coverage every 12 months. Each incident is subject to a service fee or
+          deductible. Taxes may apply. Theft and loss coverage requires you to have Find My iPhone enabled on your device at the time it is lost or stolen. Find My iPhone should remain enabled and your iPhone should remain associated with your Apple
+          ID throughout the theft or loss claim process. Disabling Find My iPhone will void all coverage of theft and loss. You are not required to purchase AppleCare+ with Theft and Loss to participate in the iPhone Upgrade Program.</li>
         <li>The company obligated under AppleCare+ in the United States is AppleCare Service Company, Inc., an Arizona corporation and wholly owned subsidiary of Apple Inc., doing business in Texas as Apple CSC Inc.</li>
-        <li>AppleCare+ with Theft & Loss is an optional device protection program that provides combined benefits under AppleCare+ and a Theft & Loss insurance policy. Theft and Loss insurance coverage is underwritten by New Hampshire Insurance Company (NAIC# 23841; Principal Address 175 Water Street, 18th Floor, New York, NY 10038; Phone (212) 770-7000) and is sold by AppleCare Service Company, Inc. (in California d/b/a Brogdan Insurance Services Lic#OL00763; Iowa License #26) and is sold in NY by Apple Inc. (License #926146). Theft and loss insurance coverage is provided under a group policy issued to AppleCare Service Company, Inc. in all states, except for New York where the policy is issued to Apple Inc. Coverage is subject to certain terms, conditions, and limitations. Theft and Loss can be purchased separately. Please refer to the certificate of coverage for your state for complete details, which can be found at www.aigtheftandloss.com/coveragedocs.</li>
+        <li>AppleCare+ with Theft & Loss is an optional device protection program that provides combined benefits under AppleCare+ and a Theft & Loss insurance policy. Theft and Loss insurance coverage is underwritten by New Hampshire Insurance
+          Company (NAIC# 23841; Principal Address 175 Water Street, 18th Floor, New York, NY 10038; Phone (212) 770-7000) and is sold by AppleCare Service Company, Inc. (in California d/b/a Brogdan Insurance Services Lic#OL00763; Iowa License #26)
+          and is sold in NY by Apple Inc. (License #926146). Theft and loss insurance coverage is provided under a group policy issued to AppleCare Service Company, Inc. in all states, except for New York where the policy is issued to Apple Inc.
+          Coverage is subject to certain terms, conditions, and limitations. Theft and Loss can be purchased separately. Please refer to the certificate of coverage for your state for complete details, which can be found at
+          www.aigtheftandloss.com/coveragedocs.</li>
         <li>†† We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to Apple.</li>
       </ul>
     </section>
 
     <section>
       <nav>
-        <ul>
-          <li>Shop and Learn</li>
-          <li>Services</li>
-          <li>Account</li>
-          <li>Apple Store</li>
-          <li>For Business</li>
-          <li>For Education</li>
-          <li>For Healthcare</li>
-          <li>For Government</li>
-          <li>Apple Values</li>
-          <li>About Apple</li>
-        </ul>
+        <details>
+          <summary>Shop and Learn</summary>
+          <ul>
+            <li>
+              <a href="#">Mac</a>
+            </li>
+            <li>
+              <a href="#">iPad</a>
+            </li>
+            <li>
+              <a href="#">iPhone</a>
+            </li>
+            <li>
+              <a href="#">Watch</a>
+            </li>
+            <li>
+              <a href="#">TV</a>
+            </li>
+            <li>
+              <a href="#">Music</a>
+            </li>
+            <li>
+              <a href="#">AirPods</a>
+            </li>
+            <li>
+              <a href="#">HomePod</a>
+            </li>
+            <li>
+              <a href="#">iPod touch</a>
+            </li>
+            <li>
+              <a href="#">Accessories</a>
+            </li>
+            <li>
+              <a href="#">Gift Cards</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Services</summary>
+          <ul>
+            <li>
+              <a href="#">Apple Music</a>
+            </li>
+            <li>
+              <a href="#">Apple News+</a>
+            </li>
+            <li>
+              <a href="#">Apple TV+</a>
+            </li>
+            <li>
+              <a href="#">Apple Arcade</a>
+            </li>
+            <li>
+              <a href="#">Apple Books</a>
+            </li>
+            <li>
+              <a href="#">Apple Card</a>
+            </li>
+            <li>
+              <a href="#">iCloud</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Account</summary>
+          <ul>
+            <li>
+              <a href="#">Manage Your Apple ID</a>
+            </li>
+            <li>
+              <a href="#">Apple Store Account</a>
+            </li>
+            <li>
+              <a href="#">iCloud.com</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Apple Store</summary>
+          <ul>
+            <li>
+              <a href="#">Find a Store</a>
+            </li>
+            <li>
+              <a href="#">Shop Online</a>
+            </li>
+            <li>
+              <a href="#">Genius Bar</a>
+            </li>
+            <li>
+              <a href="#">Today at Apple</a>
+            </li>
+            <li>
+              <a href="#">Apple Camp</a>
+            </li>
+            <li>
+              <a href="#">Apple Store App</a>
+            </li>
+            <li>
+              <a href="#">Refurbished and Clearance</a>
+            </li>
+            <li>
+              <a href="#">Financing</a>
+            </li>
+            <li>
+              <a href="#">Apple Trade In</a>
+            </li>
+            <li>
+              <a href="#">Order Status</a>
+            </li>
+            <li>
+              <a href="#">Shopping Help</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>For Business</summary>
+          <ul>
+            <li>
+              <a href="#">Apple and Business</a>
+            </li>
+            <li>
+              <a href="#">Shop for Business</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>For Education</summary>
+          <ul>
+            <li>
+              <a href="#">Apple and Education</a>
+            </li>
+            <li>
+              <a href="#">Shop for K-12</a>
+            </li>
+            <li>
+              <a href="#">Shop for College</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>For Healthcare</summary>
+          <ul>
+            <li>
+              <a href="#">Apple in Healthcare</a>
+            </li>
+            <li>
+              <a href="#">Health on Apple Watch</a>
+            </li>
+            <li>
+              <a href="#">Health Records on iPhone</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>For Government</summary>
+          <ul>
+            <li>
+              <a href="#">Shop for Government</a>
+            </li>
+            <li>
+              <a href="#">Shop for Veterans and Military</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Apple Values</summary>
+          <ul>
+            <li>
+              <a href="#">Accessibility</a>
+            </li>
+            <li>
+              <a href="#">Education</a>
+            </li>
+            <li>
+              <a href="#">Environment</a>
+            </li>
+            <li>
+              <a href="#">Inclusion and Diversity</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+            <li>
+              <a href="#">Supplier Responsibility</a>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>About Apple</summary>
+          <ul>
+            <li>
+              <a href="#">Newsroom</a>
+            </li>
+            <li>
+              <a href="#">Apple Leadership</a>
+            </li>
+            <li>
+              <a href="#">Job Opportunities</a>
+            </li>
+            <li>
+              <a href="#">Investors</a>
+            </li>
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Contact Apple</a>
+            </li>
+          </ul>
+        </details>
       </nav>
+    </section>
+
+    <section class="lastItems">
+      <ul>
+        <li>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.</li>
+        <li><a href="#">United States</a></li>
+        <li>Copyright &copy; 2020 Apple Inc. All rights reserved.</li>
+        <li>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales and Refunds</a>
+          <a href="#">Legal</a>
+          <a href="#">Site Map</a>
+        </li>
+      </ul>
     </section>
   </footer>
 
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
 
